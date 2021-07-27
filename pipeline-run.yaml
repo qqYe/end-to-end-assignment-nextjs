@@ -3,6 +3,7 @@ kind: PipelineRun
 metadata:
   generateName: next-sample-app-pipeline-run-
 spec:
+  serviceAccountName: build-bot
   pipelineRef:
     name: next-sample-app-pipeline
   workspaces:
