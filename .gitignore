@@ -35,3 +35,4 @@ yarn-error.log*
 
 #credentials
 quay-io-credentials.yml
+git-credentials.yaml
