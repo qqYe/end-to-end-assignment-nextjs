@@ -6,6 +6,11 @@ spec:
   serviceAccountName: build-bot
   pipelineRef:
     name: next-sample-app-pipeline
+  params:
+    - name: image-repo
+      value: quay.io/qqye/next-sample-app
+    - name: app-name
+      value: next-sample-app
   workspaces:
     - name: pipeline-shared-data
       volumeClaimTemplate:
