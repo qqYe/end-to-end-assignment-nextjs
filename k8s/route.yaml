@@ -4,12 +4,12 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
-  name: express-sample-app
+  name: next-sample-app
 spec:
   tls:
     termination: edge
   to:
     kind: Service
-    name: express-sample-app
+    name: next-sample-app
     weight: 100
   wildcardPolicy: None
